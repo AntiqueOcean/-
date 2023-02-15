@@ -59,9 +59,12 @@
             border-bottom: 1px dotted #fcfcfc;
             padding: 8px;
             box-sizing: border-box;
-            border-radius: 16px;
+            border-radius: 12px;
             border-bottom: 4px solid  #f4f4f4;
             width: 100%;
+            gap: 8px;
+            display: flex;
+            flex-wrap: wrap;
         }
         .item:hover {
             background-color: #f4f4f4;
@@ -69,6 +72,8 @@
         .item h1 {
             text-align: right;
             font-size: 16px;
+            width: 100%;
+            margin: 0 0 4px 0;
         }
         .item h1:before {
             content: var(--content, "");
@@ -84,9 +89,10 @@
 
         .item h2 {
             text-align: right;
-
+            width: 100%;
             font-size: 14px;
             color: #666;
+            margin: 0 0 16px 0;
         }
         .button-row {
             display: flex;
@@ -125,9 +131,8 @@
             padding: 8px 12px 8px 12px;
             font-size: 14px;
             background-color: #e8e8e8;
-            color: black !important;
-            left: 0;
-            width: 100%;
+            color: black;
+            flex-grow: 1;
             height: auto;
             outline: none;
             border: none;
@@ -135,16 +140,19 @@
             box-sizing: border-box;
             text-decoration: none !important;
             border: 1px solid transparent;
+            transition-duration: 0.12s;
         }
         .item:hover button {
-            border-color: #d8d8d8;
-        }
-        .item button:hover {
+            border-color: #b9b9b9;
             background-color: #d8d8d8;
         }
+        .item button:hover {
+            background-color: var(--accent);
+            color: white;
+        }
         .item button:active {
-            background-color: #c9c9c9;
-            padding: 10px 12px 6px 12px;
+            background-color: var(--accent2, var(--accent));
+            color: black;
         }
     </style>
 </head>
@@ -161,22 +169,19 @@
         <div class="item">
             <h1 style="--accent: #8eaa30; --content:'1.0.0';">نسخه اندروید</h1>
             <h2>سازگار با اندروید 5 و بالاتر.</h2>
-            <button onclick="location.href='resources/Android/app-release.apk';">دانلود نسخه اندروید</button>
+            <button style="--accent:#8eaa30;" onclick="location.href='resources/Android/app-release.apk';">دانلود نسخه اندروید</button>
         </div>
         <div class="item">
             <h1 style="--accent: #bd589e; --content:'1.0.0';">نسخه تحت وب</h1>
             <h2>جهت استفاده بدون نصب نرم‌افزار. <br/> توجه: در صورت استفاده از IOS از این نسخه استفاده کنید.</h2>
-            <button onclick="window.open('https://antiqueocean.github.io/Tabdilyaar.web/', '_blank').focus();">برو</button>
+            <button style="--accent:#bd589e;" onclick="window.open('https://antiqueocean.github.io/Tabdilyaar.web/', '_blank').focus();">برو</button>
         </div>
         <div class="item">
-            <h1 style="--accent: #3982c6; --content:'به زودی';">نسخه دسکتاپ (ویندوز)</h1>
+            <h1 style="--accent: #3982c6; --content:'به زودی';">نسخه دسکتاپ</h1>
             <h2>به زودی ...</h2>
-            <button>به زودی</button>
-        </div>
-        <div class="item">
-            <h1 style="--accent: #868686; --content:'به زودی';">نسخه دسکتاپ (لینوکس)</h1>
-            <h2>به زودی ...</h2>
-            <button>به زودی</button>
+            <button onclick="alert('به زودی...');" style="--accent:#3982c6;">ویندوز</button>
+            <button onclick="alert('به زودی...');" style="--accent:#3982c6;">لینوکس</button>
+            <button onclick="alert('به زودی...');" style="--accent:#3982c6;">مک</button>
         </div>
 
     </div>
