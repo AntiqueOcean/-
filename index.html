@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبدیل‌یار | تبدیل متن آموزشیار</title>
+
+    <style>
+        body {
+            background-color: white;
+            font: 16px sans-serif;
+            color: #444;
+            font-family: sans-serif;
+
+        }
+        .main-content {
+            max-width: 800px;
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            background-color: #f4f4f4;
+            border-radius: 16px;
+            width: auto;
+            margin: 32px auto;
+            top: 16px;
+        }
+        .title {
+            font-size: 22px;
+            color: #444;
+            flex-grow: 1;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+            flex-grow: 1;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        .inner-content {
+            margin: 16px;
+            box-sizing: border-box;
+            border-radius: 16px;
+            background-color: white;
+            padding: 10px;
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 8px;
+        }
+        .item {
+            border-bottom: 1px dotted #fcfcfc;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 16px;
+            border-bottom: 4px solid  #f4f4f4;
+            width: 100%;
+        }
+        .item:hover {
+            background-color: #f4f4f4;
+        }
+        .item h1 {
+            text-align: right;
+            font-size: 16px;
+        }
+        .item h1:before {
+            content: var(--content, "");
+            border-radius: 10px;
+            background-color: var(--accent, #444);
+            color: white;
+            aspect-ratio: 1 / 1;
+            padding: 4px 8px 4px 8px;
+            font-size: 12px;
+            margin-left: 8px;
+            
+        }
+
+        .item h2 {
+            text-align: right;
+
+            font-size: 14px;
+            color: #666;
+        }
+        .button-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: nowrap;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button-row button {
+            outline: none;
+            border: none;
+            padding: 6px 12px 6px 12px;
+            font-size: 13px;
+            color: #222;
+            background-color: rgb(228, 228, 228);
+            border-radius: 8px;
+            border-bottom: 2px solid rgb(160, 160, 160);
+        }
+        .button-row button:hover {
+            color: #222;
+            background-color: rgb(212, 212, 212);
+
+        }
+        .button-row button:active {
+            padding: 7px 10px 5px 14px;
+            background-color: rgb(222, 222, 222);
+        }
+        .copyright {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 14px;
+            color: #807e7e;
+        }
+        .item button {
+            padding: 8px 12px 8px 12px;
+            font-size: 14px;
+            background-color: #e8e8e8;
+            color: black;
+            left: 0;
+            width: 100%;
+            height: auto;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            box-sizing: border-box;
+
+            border: 1px solid transparent;
+        }
+        .item:hover button {
+            border-color: #d8d8d8;
+        }
+        .item button:hover {
+            background-color: #d8d8d8;
+        }
+        .item button:active {
+            background-color: #c9c9c9;
+            padding: 10px 12px 6px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+    <div class="title">تبدیل‌یار</div>
+    <div class="subtitle">نرم‌افزار تبدیل متن آموزشیار</div>
+    <div class="button-row">
+        <button>تماس با من</button>
+        <button>گزارش باگ</button>
+        <button>جمایت از سازنده</button>
+    </div>
+    <div class="inner-content">
+        <div class="item">
+            <h1 style="--accent: #8eaa30; --content:'1.0.0';">نسخه اندروید</h1>
+            <h2>سازگار با اندروید 5 به بالا.</h2>
+            <button>دانلود نسخه اندروید</button>
+        </div>
+        <div class="item">
+            <h1 style="--accent: #3982c6; --content:'به زودی';">نسخه دسکتاپ (ویندوز)</h1>
+            <h2>به زودی ...</h2>
+            <button>به زودی</button>
+        </div>
+        <div class="item">
+            <h1 style="--accent: #bd589e; --content:'1.0.0';">نسخه تحت وب</h1>
+            <h2>جهت استفاده بدون نصب نرم‌افزار.</h2>
+            <button>برو</button>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">تمام حقوق مادی و معنوی این صفحه و محتویاتش متعلق به <a href="">AntiqueOcean</a> است.</div>
+</body>
+</html>
